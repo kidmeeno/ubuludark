@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ubulu Africa | Make Innovation Work. For Africa.</title>
+    <meta
+      name="description"
+      content="Ubulu Africa is a digital innovation hub and venture studio that builds ventures, delivers ecosystem programs, and partners with organizations to turn ideas into real impact."
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0B3C5D",
+              secondary: "#F47A20",
+              growth: "#2FA84F",
+              light: "#F5F7FA",
+              dark: "#1A1A1A",
+              border: "#E5E7EB",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-light text-dark overflow-x-hidden">
+    <!-- Header -->
+    <header
+      id="main-header"
+      class="fixed top-0 left-0 w-full z-50 bg-white transition-all duration-300"
+    >
+      <nav
+        class="container mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2">
+          <div
+            class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center"
+          >
+            <span class="text-white font-bold text-xl">U</span>
+          </div>
+          <span class="text-2xl font-bold text-primary tracking-tight"
+            >Ubulu <span class="text-secondary">Africa</span></span
+          >
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex items-center space-x-8">
+          <a
+            href="index.html"
+            class="nav-link font-medium active text-secondary"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="nav-link font-medium hover:text-secondary transition-colors"
+            >About</a
+          >
+          <div class="relative group">
+            <a
+              href="what-we-do.html"
+              class="nav-link font-medium hover:text-secondary transition-colors flex items-center"
+            >
+              What We Do <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </a>
+            <div
+              class="absolute left-0 mt-2 w-56 bg-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-gray-100 overflow-hidden"
+            >
+              <a
+                href="venture-building.html"
+                class="block px-4 py-3 hover:bg-light text-sm font-medium"
+                >Venture Building</a
+              >
+              <a
+                href="ecosystem-support.html"
+                class="block px-4 py-3 hover:bg-light text-sm font-medium"
+                >Ecosystem Support</a
+              >
+              <a
+                href="corporate-innovation.html"
+                class="block px-4 py-3 hover:bg-light text-sm font-medium"
+                >Corporate Innovation</a
+              >
+              <a
+                href="university-industry.html"
+                class="block px-4 py-3 hover:bg-light text-sm font-medium"
+                >University Collaboration</a
+              >
+            </div>
+          </div>
+          <a
+            href="programs-products.html"
+            class="nav-link font-medium hover:text-secondary transition-colors"
+            >Programs</a
+          >
+          <a
+            href="portfolio.html"
+            class="nav-link font-medium hover:text-secondary transition-colors"
+            >Portfolio</a
+          >
+          <a
+            href="contact.html"
+            class="bg-primary text-white px-6 py-2.5 rounded-full font-semibold hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-md"
+            >Talk to Us</a
+          >
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button
+          id="mobile-menu-btn"
+          class="lg:hidden text-primary focus:outline-none"
+        >
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div
+      id="mobile-menu"
+      class="fixed inset-0 z-[60] bg-primary flex flex-col p-8 lg:hidden"
+    >
+      <div class="flex justify-between items-center mb-12">
+        <span class="text-white font-bold text-2xl">Ubulu Africa</span>
+        <button id="close-menu-btn" class="text-white">
+          <i class="fas fa-times text-2xl"></i>
+        </button>
+      </div>
+      <div class="flex flex-col space-y-6 text-xl">
+        <a href="index.html" class="text-secondary font-semibold">Home</a>
+        <a href="about.html" class="text-white hover:text-secondary">About</a>
+        <a href="what-we-do.html" class="text-white hover:text-secondary"
+          >What We Do</a
+        >
+        <a href="programs-products.html" class="text-white hover:text-secondary"
+          >Programs</a
+        >
+        <a href="portfolio.html" class="text-white hover:text-secondary"
+          >Portfolio</a
+        >
+        <a href="partners.html" class="text-white hover:text-secondary"
+          >Partners</a
+        >
+        <a href="insights.html" class="text-white hover:text-secondary"
+          >Insights</a
+        >
+        <a href="contact.html" class="text-white hover:text-secondary"
+          >Contact</a
+        >
+      </div>
+      <div class="mt-auto">
+        <a
+          href="contact.html"
+          class="block w-full text-center bg-secondary text-white py-4 rounded-xl font-bold shadow-lg"
+          >Talk to Us</a
+        >
+      </div>
+    </div>
+
+    <main class="pt-24">
+      <!-- Hero Section -->
+      <section
+        class="hero-gradient min-h-[80vh] flex items-center relative overflow-hidden"
+      >
+        <div
+          class="container mx-auto px-6 py-12 lg:py-24 flex flex-col lg:flex-row items-center"
+        >
+          <div class="lg:w-1/2 reveal">
+            <span
+              class="inline-block px-4 py-1.5 bg-secondary bg-opacity-10 text-secondary rounded-full text-sm font-bold mb-6"
+              >EMPOWERING INNOVATION</span
+            >
+            <h1 class="text-5xl lg:text-7xl font-bold leading-tight mb-6">
+              Make Innovation Work. <br />
+              <span class="text-primary italic font-light">For Africa.</span>
+            </h1>
+            <p class="text-lg text-gray-600 mb-10 max-w-xl leading-relaxed">
+              Ubulu Africa is a digital innovation hub and venture studio that
+              builds ventures, delivers ecosystem programs, and partners with
+              organizations to turn ideas into real impact.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+            >
+              <a
+                href="contact.html"
+                class="bg-primary text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-xl text-center"
+                >Talk to Us</a
+              >
+              <a
+                href="portfolio.html"
+                class="border-2 border-primary text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-primary hover:text-white transition-all text-center"
+                >View Portfolio</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/2 mt-16 lg:mt-0 relative reveal">
+            <div
+              class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform lg:rotate-2 hover:rotate-0 transition-transform duration-500"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1522071823957-09c527762297?auto=format&fit=crop&w=800&q=80"
+                alt="Innovation Hub Africa"
+                class="w-full h-auto"
+              />
+            </div>
+            <!-- Decorative Elements -->
+            <div
+              class="absolute -top-10 -right-10 w-32 h-32 bg-secondary opacity-20 rounded-full blur-3xl"
+            ></div>
+            <div
+              class="absolute -bottom-10 -left-10 w-48 h-48 bg-growth opacity-20 rounded-full blur-3xl"
+            ></div>
+          </div>
+        </div>
+
+        <!-- Abstract background shape -->
+        <div
+          class="absolute top-0 right-0 -z-10 w-1/3 h-full bg-primary opacity-[0.02] transform skew-x-12"
+        ></div>
+      </section>
+
+      <!-- What We Do -->
+      <section class="py-24 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16 reveal">
+            <h2 class="text-4xl font-bold mb-4">What We Do</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              We provide the technical expertise, strategic guidance, and
+              ecosystem connections to drive innovation at every level.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Venture Building -->
+            <div
+              class="bg-light p-8 rounded-2xl hover-lift reveal border border-transparent hover:border-secondary transition-all"
+            >
+              <div
+                class="w-14 h-14 bg-white rounded-xl shadow-md flex items-center justify-center mb-6 text-secondary transform rotate-3"
+              >
+                <i class="fas fa-rocket text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4">Venture Building</h3>
+              <p class="text-gray-600 mb-6">
+                We don't just invest; we co-build. Helping founders navigate the
+                journey from concept to scalable enterprise.
+              </p>
+              <a
+                href="venture-building.html"
+                class="text-primary font-bold inline-flex items-center hover:text-secondary transition-colors"
+              >
+                Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+
+            <!-- Ecosystem Support -->
+            <div
+              class="bg-light p-8 rounded-2xl hover-lift reveal border border-transparent hover:border-growth transition-all"
+              style="transition-delay: 0.1s"
+            >
+              <div
+                class="w-14 h-14 bg-white rounded-xl shadow-md flex items-center justify-center mb-6 text-growth transform -rotate-3"
+              >
+                <i class="fas fa-network-wired text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4">Ecosystem Support</h3>
+              <p class="text-gray-600 mb-6">
+                Designing and delivering programs that foster growth, from
+                incubators and accelerators to innovation challenges.
+              </p>
+              <a
+                href="ecosystem-support.html"
+                class="text-primary font-bold inline-flex items-center hover:text-secondary transition-colors"
+              >
+                Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+
+            <!-- Strategic Partnerships -->
+            <div
+              class="bg-light p-8 rounded-2xl hover-lift reveal border border-transparent hover:border-primary transition-all"
+              style="transition-delay: 0.2s"
+            >
+              <div
+                class="w-14 h-14 bg-white rounded-xl shadow-md flex items-center justify-center mb-6 text-primary transform rotate-6"
+              >
+                <i class="fas fa-handshake text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4">Strategic Partnerships</h3>
+              <p class="text-gray-600 mb-6">
+                Bridging the gap between startups, corporates, governments, and
+                academia to create shared value.
+              </p>
+              <a
+                href="corporate-innovation.html"
+                class="text-primary font-bold inline-flex items-center hover:text-secondary transition-colors"
+              >
+                Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Who We Support -->
+      <section class="py-24 bg-light">
+        <div class="container mx-auto px-6">
+          <div class="flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/3 mb-12 lg:mb-0 reveal">
+              <h2 class="text-4xl font-bold mb-6">Who We Support</h2>
+              <p class="text-gray-600 mb-8 leading-relaxed">
+                We work across the entire innovation spectrum, partnering with
+                diverse stakeholders to build a thriving digital economy in
+                Africa.
+              </p>
+              <a
+                href="contact.html"
+                class="text-primary font-bold flex items-center group"
+              >
+                Become a Partner
+                <i
+                  class="fas fa-chevron-right ml-2 transition-transform group-hover:translate-x-1"
+                ></i>
+              </a>
+            </div>
+            <div
+              class="lg:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-6 lg:ml-12"
+            >
+              <!-- Support Items -->
+              <div
+                class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center reveal"
+              >
+                <i class="fas fa-lightbulb text-secondary text-3xl mb-4"></i>
+                <h4 class="font-bold">Startups & SMEs</h4>
+              </div>
+              <div
+                class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center reveal"
+                style="transition-delay: 0.05s"
+              >
+                <i class="fas fa-building text-primary text-3xl mb-4"></i>
+                <h4 class="font-bold">Corporations</h4>
+              </div>
+              <div
+                class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center reveal"
+                style="transition-delay: 0.1s"
+              >
+                <i class="fas fa-university text-growth text-3xl mb-4"></i>
+                <h4 class="font-bold">Universities</h4>
+              </div>
+              <div
+                class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center reveal"
+                style="transition-delay: 0.15s"
+              >
+                <i class="fas fa-landmark text-secondary text-3xl mb-4"></i>
+                <h4 class="font-bold">Government</h4>
+              </div>
+              <div
+                class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center reveal"
+                style="transition-delay: 0.2s"
+              >
+                <i class="fas fa-globe-africa text-primary text-3xl mb-4"></i>
+                <h4 class="font-bold">Development Orgs</h4>
+              </div>
+              <div
+                class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center reveal"
+                style="transition-delay: 0.25s"
+              >
+                <i class="fas fa-hubspot text-growth text-3xl mb-4"></i>
+                <h4 class="font-bold">Innovation Hubs</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Impact Stats -->
+      <section class="py-24 bg-primary text-white relative overflow-hidden">
+        <div
+          class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10"
+        >
+          <div
+            class="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -mr-48 -mt-48 blur-3xl"
+          ></div>
+          <div
+            class="absolute bottom-0 left-0 w-64 h-64 bg-secondary rounded-full -ml-32 -mb-32 blur-3xl"
+          ></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+            <div class="reveal">
+              <span
+                class="block text-5xl font-bold mb-2 stat-number"
+                data-target="50"
+                >0+</span
+              >
+              <span
+                class="text-white opacity-80 uppercase tracking-widest text-sm"
+                >Startups Supported</span
+              >
+            </div>
+            <div class="reveal" style="transition-delay: 0.1s">
+              <span
+                class="block text-5xl font-bold mb-2 stat-number"
+                data-target="20"
+                >0+</span
+              >
+              <span
+                class="text-white opacity-80 uppercase tracking-widest text-sm"
+                >Programs Delivered</span
+              >
+            </div>
+            <div class="reveal" style="transition-delay: 0.2s">
+              <span
+                class="block text-5xl font-bold mb-2 stat-number"
+                data-target="15"
+                >0+</span
+              >
+              <span
+                class="text-white opacity-80 uppercase tracking-widest text-sm"
+                >Partners Works With</span
+              >
+            </div>
+            <div class="reveal" style="transition-delay: 0.3s">
+              <span
+                class="block text-5xl font-bold mb-2 stat-number"
+                data-target="1000"
+                >0+</span
+              >
+              <span
+                class="text-white opacity-80 uppercase tracking-widest text-sm"
+                >People Trained</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Partner Wall -->
+      <section class="py-16 bg-white border-b border-gray-100">
+        <div class="container mx-auto px-6">
+          <p
+            class="text-center text-gray-400 font-semibold uppercase tracking-widest text-xs mb-10"
+          >
+            Trusted by leading organizations
+          </p>
+          <div
+            class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-50 grayscale hover:grayscale-0 transition-all duration-700"
+          >
+            <span class="text-3xl font-black text-gray-800">PARTNER_1</span>
+            <span class="text-3xl font-black text-gray-800">PARTNER_2</span>
+            <span class="text-3xl font-black text-gray-800">PARTNER_3</span>
+            <span class="text-3xl font-black text-gray-800">PARTNER_4</span>
+            <span class="text-3xl font-black text-gray-800">PARTNER_5</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="py-24">
+        <div class="container mx-auto px-6">
+          <div
+            class="bg-gradient-to-br from-primary to-primary/90 rounded-3xl p-12 lg:p-20 text-center relative overflow-hidden shadow-2xl reveal"
+          >
+            <div
+              class="absolute top-0 right-0 w-64 h-64 bg-secondary opacity-20 rounded-full -mr-32 -mt-32"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 w-32 h-32 bg-growth opacity-20 rounded-full -ml-16 -mb-16"
+            ></div>
+
+            <h2
+              class="text-4xl lg:text-5xl font-bold text-white mb-8 relative z-10"
+            >
+              Ready to build something impactful?
+            </h2>
+            <p
+              class="text-white opacity-80 text-lg mb-12 max-w-2xl mx-auto relative z-10"
+            >
+              Whether you're a founder with a bold idea or an organization
+              looking to drive digital transformation, let's collaborate to
+              shape the future of Africa's tech ecosystem.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 relative z-10"
+            >
+              <a
+                href="contact.html"
+                class="bg-secondary text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-xl"
+                >Talk to Us</a
+              >
+              <a
+                href="contact.html"
+                class="bg-white text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-gray-50 transition-all transform hover:scale-105 shadow-xl"
+                >Partner With Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-20 pb-10">
+      <div class="container mx-auto px-6">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16"
+        >
+          <!-- Brand -->
+          <div>
+            <a href="index.html" class="flex items-center space-x-2 mb-8">
+              <div
+                class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center"
+              >
+                <span class="text-white font-bold text-xl">U</span>
+              </div>
+              <span class="text-2xl font-bold text-white tracking-tight"
+                >Ubulu <span class="text-secondary">Africa</span></span
+              >
+            </a>
+            <p class="text-gray-400 leading-relaxed mb-6">
+              Ubulu Africa is a digital innovation hub and venture studio
+              committed to driving technology adoption and startup growth across
+              the continent.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center hover:bg-primary hover:border-primary transition-all"
+                ><i class="fab fa-linkedin-in text-sm"></i
+              ></a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center hover:bg-primary hover:border-primary transition-all"
+                ><i class="fab fa-twitter text-sm"></i
+              ></a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center hover:bg-primary hover:border-primary transition-all"
+                ><i class="fab fa-instagram text-sm"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-bold mb-8">Quick Links</h4>
+            <ul class="space-y-4 text-gray-400">
+              <li>
+                <a
+                  href="index.html"
+                  class="hover:text-secondary transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="hover:text-secondary transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="programs-products.html"
+                  class="hover:text-secondary transition-colors"
+                  >Programs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="portfolio.html"
+                  class="hover:text-secondary transition-colors"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="insights.html"
+                  class="hover:text-secondary transition-colors"
+                  >Insights</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h4 class="text-lg font-bold mb-8">Services</h4>
+            <ul class="space-y-4 text-gray-400">
+              <li>
+                <a
+                  href="venture-building.html"
+                  class="hover:text-secondary transition-colors"
+                  >Venture Building</a
+                >
+              </li>
+              <li>
+                <a
+                  href="ecosystem-support.html"
+                  class="hover:text-secondary transition-colors"
+                  >Ecosystem Support</a
+                >
+              </li>
+              <li>
+                <a
+                  href="corporate-innovation.html"
+                  class="hover:text-secondary transition-colors"
+                  >Corporate Innovation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="university-industry.html"
+                  class="hover:text-secondary transition-colors"
+                  >University-Industry</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact & Newsletter -->
+          <div>
+            <h4 class="text-lg font-bold mb-8">Newsletter</h4>
+            <p class="text-gray-400 mb-6">
+              Stay updated with the latest innovation news from Africa.
+            </p>
+            <form class="mb-8">
+              <div class="relative">
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  class="w-full bg-gray-800 border-none rounded-xl py-4 px-6 text-white focus:ring-2 focus:ring-primary"
+                />
+                <button
+                  type="submit"
+                  class="absolute right-2 top-2 bg-secondary text-white p-2 rounded-lg hover:bg-opacity-90 transition-all"
+                >
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+            <div class="text-gray-400">
+              <p class="flex items-center mb-2">
+                <i class="fas fa-envelope mr-3 text-secondary"></i>
+                hello@ubulu.africa
+              </p>
+              <p class="flex items-center">
+                <i class="fas fa-map-marker-alt mr-3 text-secondary"></i> Lagos,
+                Nigeria | Kigali, Rwanda
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm"
+        >
+          <p>&copy; 2026 Ubulu Africa. All rights reserved.</p>
+          <div class="flex space-x-6 mt-4 md:mt-0">
+            <a href="#" class="hover:text-white transition-colors"
+              >Privacy Policy</a
+            >
+            <a href="#" class="hover:text-white transition-colors"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

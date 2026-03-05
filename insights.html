@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights | Ubulu Africa</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0B3C5D',
+                        secondary: '#F47A20',
+                        growth: '#2FA84F',
+                        light: '#F5F7FA',
+                        dark: '#1A1A1A',
+                        border: '#E5E7EB',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light text-dark overflow-x-hidden">
+
+    <!-- Header -->
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-white transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">U</span>
+                </div>
+                <span class="text-2xl font-bold text-primary tracking-tight">Ubulu <span class="text-secondary">Africa</span></span>
+            </a>
+
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="index.html" class="nav-link font-medium hover:text-secondary transition-colors">Home</a>
+                <a href="about.html" class="nav-link font-medium hover:text-secondary transition-colors">About</a>
+                <a href="what-we-do.html" class="nav-link font-medium hover:text-secondary transition-colors text-white">Programs</a>
+                <a href="insights.html" class="nav-link font-medium text-secondary active">Insights</a>
+                <a href="contact.html" class="bg-primary text-white px-6 py-2.5 rounded-full font-semibold hover:bg-opacity-90 shadow-md">Talk to Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-24">
+        <!-- Featured Insight -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="bg-light rounded-[3rem] overflow-hidden flex flex-col lg:flex-row items-center reveal shadow-sm">
+                    <div class="lg:w-1/2 aspect-video lg:aspect-auto h-full">
+                        <img src="https://images.unsplash.com/photo-1553484771-047a44eee27b?auto=format&fit=crop&w=800&q=80" alt="Featured Insight" class="w-full h-full object-cover">
+                    </div>
+                    <div class="lg:w-1/2 p-12 lg:p-20">
+                        <span class="text-secondary font-bold uppercase tracking-widest text-xs mb-4 block">Ecosystem Insights</span>
+                        <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-6 leading-tight">Navigating the Future of Tech Hubs in Emerging Markets.</h2>
+                        <p class="text-gray-500 mb-8 leading-relaxed">
+                            How innovation hubs are evolving from simple coworking spaces to strategic engines for venture creation and technical talent development.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-medium text-gray-400">March 05, 2026</span>
+                            <a href="#" class="text-primary font-bold flex items-center hover:text-secondary transition-colors">Read Article <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories & Search Bar (Placeholder) -->
+        <section class="py-12 bg-white border-b border-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div class="flex flex-wrap items-center gap-4">
+                        <button class="px-5 py-2 bg-primary text-white rounded-full text-sm font-bold">All</button>
+                        <button class="px-5 py-2 bg-light text-gray-500 hover:bg-gray-200 rounded-full text-sm font-medium">Startup Ecosystems</button>
+                        <button class="px-5 py-2 bg-light text-gray-500 hover:bg-gray-200 rounded-full text-sm font-medium">Digital Transformation</button>
+                        <button class="px-5 py-2 bg-light text-gray-500 hover:bg-gray-200 rounded-full text-sm font-medium">Research & Policy</button>
+                    </div>
+                    <div class="relative w-full md:w-64">
+                        <input type="text" placeholder="Search insights..." class="w-full pl-10 pr-4 py-2 border rounded-full text-sm focus:ring-2 focus:ring-primary focus:outline-none">
+                        <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Insights Grid -->
+        <section class="py-24 bg-light">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Article 1 -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 reveal">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb45ed09?auto=format&fit=crop&w=600&q=80" alt="Blog" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-8">
+                            <span class="text-growth font-bold text-xs uppercase mb-3 block">Digital Transformation</span>
+                            <h3 class="text-xl font-bold mb-4 text-primary hover:text-secondary transition-colors cursor-pointer">5 Lessons for Corporates Partnering with African Startups.</h3>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">Exploring the friction points and success factors in corporate-startup pilot programs.</p>
+                            <div class="flex items-center text-xs text-gray-400 font-medium">
+                                <span class="mr-4">5 min read</span>
+                                <span>12 Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Article 2 -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 reveal" style="transition-delay: 0.1s">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1512428559083-a40ce9033afb?auto=format&fit=crop&w=600&q=80" alt="Blog" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-8">
+                            <span class="text-growth font-bold text-xs uppercase mb-3 block">Founder Insights</span>
+                            <h3 class="text-xl font-bold mb-4 text-primary hover:text-secondary transition-colors cursor-pointer">From MVP to PMF: The Rwandan Startup Landscape.</h3>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">A deep dive into why Kigali is becoming a prominent hub for East African ventures.</p>
+                            <div class="flex items-center text-xs text-gray-400 font-medium">
+                                <span class="mr-4">8 min read</span>
+                                <span>4 Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Article 3 -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 reveal" style="transition-delay: 0.2s">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=600&q=80" alt="Blog" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-8">
+                            <span class="text-growth font-bold text-xs uppercase mb-3 block">Research & Policy</span>
+                            <h3 class="text-xl font-bold mb-4 text-primary hover:text-secondary transition-colors cursor-pointer">Unlocking the Power of Public-Private Partnerships in Tech.</h3>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">How governments can better support the growth of innovation through smart policy frameworks.</p>
+                            <div class="flex items-center text-xs text-gray-400 font-medium">
+                                <span class="mr-4">6 min read</span>
+                                <span>21 Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination Placeholder -->
+                <div class="mt-16 flex justify-center space-x-2">
+                    <button class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center font-bold bg-primary text-white">1</button>
+                    <button class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center font-bold hover:bg-light transition-colors">2</button>
+                    <button class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center font-bold hover:bg-light transition-colors"><i class="fas fa-chevron-right text-xs"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white pt-20 pb-10">
+        <div class="container mx-auto px-6 border-t border-gray-800 pt-12 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Ubulu Africa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

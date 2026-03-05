@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University-Industry Collaboration | Ubulu Africa</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0B3C5D',
+                        secondary: '#F47A20',
+                        growth: '#2FA84F',
+                        light: '#F5F7FA',
+                        dark: '#1A1A1A',
+                        border: '#E5E7EB',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light text-dark overflow-x-hidden">
+
+    <!-- Header -->
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-white transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">U</span>
+                </div>
+                <span class="text-2xl font-bold text-primary tracking-tight">Ubulu <span class="text-secondary">Africa</span></span>
+            </a>
+
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="index.html" class="nav-link font-medium hover:text-secondary transition-colors">Home</a>
+                <a href="about.html" class="nav-link font-medium hover:text-secondary transition-colors">About</a>
+                <div class="relative group">
+                    <a href="what-we-do.html" class="nav-link font-medium text-secondary active flex items-center">
+                        What We Do <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden">
+                        <a href="venture-building.html" class="block px-4 py-3 hover:bg-light text-sm font-medium">Venture Building</a>
+                        <a href="ecosystem-support.html" class="block px-4 py-3 hover:bg-light text-sm font-medium">Ecosystem Support</a>
+                        <a href="corporate-innovation.html" class="block px-4 py-3 hover:bg-light text-sm font-medium">Corporate Innovation</a>
+                        <a href="university-industry.html" class="block px-4 py-3 bg-light text-secondary text-sm font-bold">University Collaboration</a>
+                    </div>
+                </div>
+                <a href="programs-products.html" class="nav-link font-medium hover:text-secondary transition-colors">Programs</a>
+                <a href="portfolio.html" class="nav-link font-medium hover:text-secondary transition-colors">Portfolio</a>
+                <a href="contact.html" class="bg-primary text-white px-6 py-2.5 rounded-full font-semibold hover:bg-opacity-90 shadow-md">Talk to Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-24">
+        <!-- Hero -->
+        <section class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="lg:w-1/2 reveal">
+                        <span class="text-secondary font-bold uppercase tracking-widest text-sm mb-4 block">Bridging Theory & Practice</span>
+                        <h1 class="text-4xl lg:text-6xl font-bold text-primary mb-6 leading-tight">Empowering academia to fuel industry innovation.</h1>
+                        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                            We bridge the gap between higher education institutions and the private sector. By commercializing research and enhancing student work-readiness, we turn universities into true engines of economic development.
+                        </p>
+                    </div>
+                    <div class="lg:w-1/2 reveal">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="University Industry Collaboration" class="rounded-3xl shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partnership Areas -->
+        <section class="py-24 bg-light">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-12 rounded-3xl shadow-sm reveal">
+                        <h3 class="text-2xl font-bold text-primary mb-6">Partnership Programs</h3>
+                        <p class="text-gray-500 mb-6">Co-designing curriculum-aligned programs that bring industry leaders into the classroom and students into the workspace.</p>
+                        <ul class="space-y-4 text-sm font-semibold text-secondary">
+                            <li><i class="fas fa-check-circle mr-2"></i> Student Internships</li>
+                            <li><i class="fas fa-check-circle mr-2"></i> Industry Guest Lectures</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-12 rounded-3xl shadow-sm reveal" style="transition-delay: 0.1s">
+                        <h3 class="text-2xl font-bold text-primary mb-6">Research Management</h3>
+                        <p class="text-gray-500 mb-6">Providing the framework and management support to turn academic research into commercially viable products and startups.</p>
+                        <ul class="space-y-4 text-sm font-semibold text-secondary">
+                            <li><i class="fas fa-check-circle mr-2"></i> IP Commercialization</li>
+                            <li><i class="fas fa-check-circle mr-2"></i> Research-to-Venture Pipelines</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-24 bg-primary text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-8">Ready to Bridge the Gap?</h2>
+                <a href="contact.html" class="inline-block bg-secondary text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-opacity-90 shadow-2xl transition-all">Connect with Us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white pt-20 pb-10">
+        <div class="container mx-auto px-6 border-t border-gray-800 pt-12 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Ubulu Africa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partners | Ubulu Africa</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0B3C5D',
+                        secondary: '#F47A20',
+                        growth: '#2FA84F',
+                        light: '#F5F7FA',
+                        dark: '#1A1A1A',
+                        border: '#E5E7EB',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light text-dark overflow-x-hidden">
+
+    <!-- Header -->
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-white transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">U</span>
+                </div>
+                <span class="text-2xl font-bold text-primary tracking-tight">Ubulu <span class="text-secondary">Africa</span></span>
+            </a>
+
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="index.html" class="nav-link font-medium hover:text-secondary transition-colors">Home</a>
+                <a href="about.html" class="nav-link font-medium hover:text-secondary transition-colors">About</a>
+                <a href="what-we-do.html" class="nav-link font-medium hover:text-secondary transition-colors">What We Do</a>
+                <a href="programs-products.html" class="nav-link font-medium hover:text-secondary transition-colors text-white">Programs</a>
+                <a href="partners.html" class="nav-link font-medium text-secondary active">Partners</a>
+                <a href="contact.html" class="bg-primary text-white px-6 py-2.5 rounded-full font-semibold hover:bg-opacity-90 shadow-md">Talk to Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-24">
+        <!-- Hero -->
+        <section class="py-24 bg-white border-b border-gray-100">
+            <div class="container mx-auto px-6 text-center reveal">
+                <h1 class="text-4xl lg:text-6xl font-bold text-primary mb-6">Our Ecosystem Partners</h1>
+                <p class="text-gray-500 max-w-2xl mx-auto text-lg">
+                    We collaborate with visionary organizations to drive innovation and create sustainable impact across Africa.
+                </p>
+            </div>
+        </section>
+
+        <!-- Partner Categories -->
+        <section class="py-24 bg-light">
+            <div class="container mx-auto px-6">
+                
+                <!-- Development Partners -->
+                <div class="mb-24 reveal">
+                    <h2 class="text-2xl font-bold text-primary mb-10 pb-4 border-b-2 border-secondary inline-block">Development Partners</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+                        <div class="bg-white p-8 rounded-2xl flex items-center justify-center shadow-sm opacity-50 hover:opacity-100 transition-opacity"><span class="font-black text-gray-300">NGO_ONE</span></div>
+                        <div class="bg-white p-8 rounded-2xl flex items-center justify-center shadow-sm opacity-50 hover:opacity-100 transition-opacity"><span class="font-black text-gray-300">DEV_CORP</span></div>
+                        <div class="bg-white p-8 rounded-2xl flex items-center justify-center shadow-sm opacity-50 hover:opacity-100 transition-opacity"><span class="font-black text-gray-300">UN_AGENCY</span></div>
+                        <div class="bg-white p-8 rounded-2xl flex items-center justify-center shadow-sm opacity-50 hover:opacity-100 transition-opacity"><span class="font-black text-gray-300">GLOBAL_FND</span></div>
+                        <div class="bg-white p-8 rounded-2xl flex items-center justify-center shadow-sm opacity-50 hover:opacity-100 transition-opacity"><span class="font-black text-gray-300">FOUNDATION</span></div>
+                    </div>
+                </div>
+
+                <!-- Corporate Partners -->
+                <div class="mb-24 reveal">
+                    <h2 class="text-2xl font-bold text-primary mb-10 pb-4 border-b-2 border-secondary inline-block">Corporate Partners</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+                        <div class="bg-white p-8 rounded-2xl flex items-center justify-center shadow-sm opacity-50 hover:opacity-100 transition-opacity"><span class="font-black text-gray-300">TELCO_LTD</span></div>
+                        <div class="bg-white p-8 rounded-2xl flex items-center justify-center shadow-sm opacity-50 hover:opacity-100 transition-opacity"><span class="font-black text-gray-300">BANK_AFRICA</span></div>
+                        <div class="bg-white p-8 rounded-2xl flex items-center justify-center shadow-sm opacity-50 hover:opacity-100 transition-opacity"><span class="font-black text-gray-300">TECH_GIANT</span></div>
+                        <div class="bg-white p-8 rounded-2xl flex items-center justify-center shadow-sm opacity-50 hover:opacity-100 transition-opacity"><span class="font-black text-gray-300">SOFT_INC</span></div>
+                    </div>
+                </div>
+
+                <!-- Government Partners -->
+                <div class="mb-24 reveal">
+                    <h2 class="text-2xl font-bold text-primary mb-10 pb-4 border-b-2 border-secondary inline-block">Government Partners</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+                        <div class="bg-white p-8 rounded-2xl flex items-center justify-center shadow-sm opacity-50 hover:opacity-100 transition-opacity"><span class="font-black text-gray-300">MIN_TECH</span></div>
+                        <div class="bg-white p-8 rounded-2xl flex items-center justify-center shadow-sm opacity-50 hover:opacity-100 transition-opacity"><span class="font-black text-gray-300">GOV_AGENCY</span></div>
+                        <div class="bg-white p-8 rounded-2xl flex items-center justify-center shadow-sm opacity-50 hover:opacity-100 transition-opacity"><span class="font-black text-gray-300">REGULATOR</span></div>
+                    </div>
+                </div>
+
+                <!-- Ecosystem Partners -->
+                <div class="reveal">
+                    <h2 class="text-2xl font-bold text-primary mb-10 pb-4 border-b-2 border-secondary inline-block">Innovation Ecosystem</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+                        <div class="bg-white p-8 rounded-2xl flex items-center justify-center shadow-sm opacity-50 hover:opacity-100 transition-opacity"><span class="font-black text-gray-300">HUB_KIGALI</span></div>
+                        <div class="bg-white p-8 rounded-2xl flex items-center justify-center shadow-sm opacity-50 hover:opacity-100 transition-opacity"><span class="font-black text-gray-300">STUDIO_X</span></div>
+                        <div class="bg-white p-8 rounded-2xl flex items-center justify-center shadow-sm opacity-50 hover:opacity-100 transition-opacity"><span class="font-black text-gray-300">VC_FUND_A</span></div>
+                        <div class="bg-white p-8 rounded-2xl flex items-center justify-center shadow-sm opacity-50 hover:opacity-100 transition-opacity"><span class="font-black text-gray-300">ACCEL_AF</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-24 bg-primary text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-8">Want to partner with us?</h2>
+                <p class="text-white/70 mb-10 max-w-2xl mx-auto">Join our network of innovators, funders, and ecosystem builders.</p>
+                <a href="contact.html" class="inline-block bg-secondary text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-opacity-90 shadow-2xl transition-all">Partner With Us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white pt-20 pb-10">
+        <div class="container mx-auto px-6 border-t border-gray-800 pt-12 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Ubulu Africa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
