@@ -12,12 +12,12 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#0B3C5D',
-                        secondary: '#F47A20',
-                        growth: '#2FA84F',
-                        light: '#F5F7FA',
-                        dark: '#1A1A1A',
-                        border: '#E5E7EB',
+                        primary: "#3b82f6",
+                        secondary: "#fb923c",
+                        growth: "#4ade80",
+                        light: "#1e293b",
+                        dark: "#0f172a",
+                        border: "#334155",
                     }
                 }
             }
@@ -30,10 +30,10 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-light text-dark overflow-x-hidden">
+<body class="bg-dark text-slate-200 overflow-x-hidden">
 
     <!-- Header -->
-    <header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-white transition-all duration-300">
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-dark/80 backdrop-blur-md transition-all duration-300 border-b border-border/50">
         <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
             <a href="index.html" class="flex items-center space-x-2">
                 <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
@@ -49,11 +49,11 @@
                     <a href="what-we-do.html" class="nav-link font-medium text-secondary active flex items-center">
                         What We Do <i class="fas fa-chevron-down ml-1 text-xs"></i>
                     </a>
-                    <div class="absolute left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden">
-                        <a href="venture-building.html" class="block px-4 py-3 bg-light text-secondary text-sm font-bold">Venture Building</a>
-                        <a href="ecosystem-support.html" class="block px-4 py-3 hover:bg-light text-sm font-medium">Ecosystem Support</a>
-                        <a href="corporate-innovation.html" class="block px-4 py-3 hover:bg-light text-sm font-medium">Corporate Innovation</a>
-                        <a href="university-industry.html" class="block px-4 py-3 hover:bg-light text-sm font-medium">University Collaboration</a>
+                    <div class="absolute left-0 mt-2 w-56 bg-light rounded-xl shadow-2xl border border-border overflow-hidden">
+                        <a href="venture-building.html" class="block px-4 py-3 bg-dark text-secondary text-sm font-bold">Venture Building</a>
+                        <a href="ecosystem-support.html" class="block px-4 py-3 hover:bg-dark text-sm font-medium transition-colors">Ecosystem Support</a>
+                        <a href="corporate-innovation.html" class="block px-4 py-3 hover:bg-dark text-sm font-medium transition-colors">Corporate Innovation</a>
+                        <a href="university-industry.html" class="block px-4 py-3 hover:bg-dark text-sm font-medium transition-colors">University Collaboration</a>
                     </div>
                 </div>
                 <a href="programs-products.html" class="nav-link font-medium hover:text-secondary transition-colors">Programs</a>
@@ -68,38 +68,38 @@
     </header>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-primary flex flex-col p-8 lg:hidden text-white">
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-dark flex flex-col p-8 lg:hidden text-white">
         <div class="flex justify-between items-center mb-12">
             <span class="text-white font-bold text-2xl">Ubulu Africa</span>
             <button id="close-menu-btn" class="text-white"><i class="fas fa-times text-2xl"></i></button>
         </div>
         <div class="flex flex-col space-y-6 text-xl">
-            <a href="index.html" class="text-white hover:text-secondary">Home</a>
-            <a href="about.html" class="text-white hover:text-secondary">About</a>
-            <a href="what-we-do.html" class="text-white hover:text-secondary font-semibold">What We Do</a>
-            <a href="programs-products.html" class="text-white hover:text-secondary">Programs</a>
-            <a href="portfolio.html" class="text-white hover:text-secondary">Portfolio</a>
-            <a href="contact.html" class="text-white hover:text-secondary">Contact</a>
+            <a href="index.html" class="text-white hover:text-secondary transition-colors">Home</a>
+            <a href="about.html" class="text-white hover:text-secondary transition-colors">About</a>
+            <a href="what-we-do.html" class="text-white hover:text-secondary transition-colors font-semibold">What We Do</a>
+            <a href="programs-products.html" class="text-white hover:text-secondary transition-colors">Programs</a>
+            <a href="portfolio.html" class="text-white hover:text-secondary transition-colors">Portfolio</a>
+            <a href="contact.html" class="text-white hover:text-secondary transition-colors">Contact</a>
         </div>
     </div>
 
     <main class="pt-24">
         <!-- Service Hero -->
-        <section class="py-24 bg-white">
+        <section class="py-24 bg-dark">
             <div class="container mx-auto px-6">
                 <div class="flex flex-col lg:flex-row items-center gap-16">
                     <div class="lg:w-1/2 reveal">
                         <span class="text-secondary font-bold uppercase tracking-widest text-sm mb-4 block">Venture Studio</span>
-                        <h1 class="text-4xl lg:text-6xl font-bold text-primary mb-6 leading-tight">We co-build the next generation of African giants.</h1>
-                        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        <h1 class="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">We co-build the next generation of African giants.</h1>
+                        <p class="text-lg text-slate-400 mb-8 leading-relaxed">
                             Through our venture building model, we partner with founders early. We provide more than just capital—we bring technical expertise, go-to-market strategies, and operational support to ensure ideas turn into sustainable businesses.
                         </p>
-                        <a href="contact.html" class="inline-block bg-primary text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-opacity-90 transition-all shadow-xl">Build With Us</a>
+                        <a href="contact.html" class="inline-block bg-secondary text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-opacity-90 transition-all shadow-xl">Build With Us</a>
                     </div>
                     <div class="lg:w-1/2 reveal">
                         <div class="relative">
-                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Venture Building Team" class="rounded-3xl shadow-2xl">
-                            <div class="absolute -top-10 -left-10 w-24 h-24 bg-secondary/20 rounded-full blur-2xl"></div>
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Venture Building Team" class="rounded-3xl shadow-2xl border border-border/50">
+                            <div class="absolute -top-10 -left-10 w-24 h-24 bg-secondary/10 rounded-full blur-2xl"></div>
                         </div>
                     </div>
                 </div>
@@ -107,91 +107,93 @@
         </section>
 
         <!-- Capabilities -->
-        <section class="py-24 bg-light">
+        <section class="py-24 bg-dark/50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16 reveal">
-                    <h2 class="text-4xl font-bold mb-4">Our Capabilities</h2>
-                    <p class="text-gray-600 max-w-2xl mx-auto">We provide full-stack supports to ensure venture success from day zero.</p>
+                    <h2 class="text-4xl font-bold mb-4 text-white">Our Capabilities</h2>
+                    <p class="text-slate-400 max-w-2xl mx-auto">We provide full-stack supports to ensure venture success from day zero.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Product Development -->
-                    <div class="bg-white p-10 rounded-3xl shadow-sm hover-lift reveal">
-                        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+                    <div class="bg-light p-10 rounded-3xl shadow-sm hover-lift reveal border border-border/50 transition-all duration-300">
+                        <div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center text-primary mb-6">
                             <i class="fas fa-code"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Product Development</h3>
-                        <p class="text-gray-500 text-sm mb-4 leading-relaxed">Technical architecture, UI/UX design, and MVP builds that scale with your growth.</p>
+                        <h3 class="text-xl font-bold mb-4 text-white">Product Development</h3>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Technical architecture, UI/UX design, and MVP builds that scale with your growth.</p>
                         <ul class="text-xs text-secondary font-bold space-y-2">
                             <li><i class="fas fa-check mr-2"></i> Technical Roadmapping</li>
                             <li><i class="fas fa-check mr-2"></i> Agile Engineering</li>
                         </ul>
                     </div>
                     <!-- GTM Strategy -->
-                    <div class="bg-white p-10 rounded-3xl shadow-sm hover-lift reveal" style="transition-delay: 0.1s">
-                        <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center text-secondary mb-6">
+                    <div class="bg-light p-10 rounded-3xl shadow-sm hover-lift reveal border border-border/50 transition-all duration-300" style="transition-delay: 0.1s">
+                        <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center text-secondary mb-6">
                             <i class="fas fa-bullseye"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Go-to-Market Strategy</h3>
-                        <p class="text-gray-500 text-sm mb-4 leading-relaxed">Identifying target markets, defining value propositions, and executing launch plans.</p>
+                        <h3 class="text-xl font-bold mb-4 text-white">Go-to-Market Strategy</h3>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Identifying target markets, defining value propositions, and executing launch plans.</p>
                         <ul class="text-xs text-secondary font-bold space-y-2">
                             <li><i class="fas fa-check mr-2"></i> Market Analysis</li>
                             <li><i class="fas fa-check mr-2"></i> Growth Hacking</li>
                         </ul>
                     </div>
                     <!-- Fundraising Readiness -->
-                    <div class="bg-white p-10 rounded-3xl shadow-sm hover-lift reveal" style="transition-delay: 0.2s">
-                        <div class="w-12 h-12 bg-growth/10 rounded-xl flex items-center justify-center text-growth mb-6">
+                    <div class="bg-light p-10 rounded-3xl shadow-sm hover-lift reveal border border-border/50 transition-all duration-300" style="transition-delay: 0.2s">
+                        <div class="w-12 h-12 bg-growth/20 rounded-xl flex items-center justify-center text-growth mb-6">
                             <i class="fas fa-coins"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Fundraising Readiness</h3>
-                        <p class="text-gray-500 text-sm mb-4 leading-relaxed">Preparing pitch decks, financial models, and connecting you with the right investors.</p>
+                        <h3 class="text-xl font-bold mb-4 text-white">Fundraising Readiness</h3>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Preparing pitch decks, financial models, and connecting you with the right investors.</p>
                         <ul class="text-xs text-secondary font-bold space-y-2">
                             <li><i class="fas fa-check mr-2"></i> Pitch Coaching</li>
                             <li><i class="fas fa-check mr-2"></i> Investor Access</li>
                         </ul>
                     </div>
                     <!-- Brand and Marketing -->
-                    <div class="bg-white p-10 rounded-3xl shadow-sm hover-lift reveal">
-                        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+                    <div class="bg-light p-10 rounded-3xl shadow-sm hover-lift reveal border border-border/50 transition-all duration-300">
+                        <div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center text-primary mb-6">
                             <i class="fas fa-paint-brush"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Brand and Marketing</h3>
-                        <p class="text-gray-500 text-sm mb-4 leading-relaxed">Building compelling brands that resonate with users and command market presence.</p>
+                        <h3 class="text-xl font-bold mb-4 text-white">Brand and Marketing</h3>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Building compelling brands that resonate with users and command market presence.</p>
                     </div>
                     <!-- Legal and Compliance -->
-                    <div class="bg-white p-10 rounded-3xl shadow-sm hover-lift reveal" style="transition-delay: 0.1s">
-                        <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center text-secondary mb-6">
+                    <div class="bg-light p-10 rounded-3xl shadow-sm hover-lift reveal border border-border/50 transition-all duration-300" style="transition-delay: 0.1s">
+                        <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center text-secondary mb-6">
                             <i class="fas fa-gavel"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Legal and Compliance</h3>
-                        <p class="text-gray-500 text-sm mb-4 leading-relaxed">Navigating the complex regulatory landscape in Africa to protect your business.</p>
+                        <h3 class="text-xl font-bold mb-4 text-white">Legal and Compliance</h3>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Navigating the complex regulatory landscape in Africa to protect your business.</p>
                     </div>
                     <!-- Talent Support -->
-                    <div class="bg-white p-10 rounded-3xl shadow-sm hover-lift reveal" style="transition-delay: 0.2s">
-                        <div class="w-12 h-12 bg-growth/10 rounded-xl flex items-center justify-center text-growth mb-6">
+                    <div class="bg-light p-10 rounded-3xl shadow-sm hover-lift reveal border border-border/50 transition-all duration-300" style="transition-delay: 0.2s">
+                        <div class="w-12 h-12 bg-growth/20 rounded-xl flex items-center justify-center text-growth mb-6">
                             <i class="fas fa-users-cog"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Talent Support</h3>
-                        <p class="text-gray-500 text-sm mb-4 leading-relaxed">Helping you find and retain the best talent to drive your venture forward.</p>
+                        <h3 class="text-xl font-bold mb-4 text-white">Talent Support</h3>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Helping you find and retain the best talent to drive your venture forward.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- CTA -->
-        <section class="py-24 bg-primary text-white">
+        <section class="py-24 bg-dark">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl lg:text-5xl font-bold mb-8 reveal">Have a bold idea?</h2>
-                <p class="text-white/70 text-lg mb-12 max-w-2xl mx-auto reveal">Let's discuss how we can help you build and scale your venture in Africa.</p>
-                <a href="contact.html" class="inline-block bg-secondary text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-opacity-90 shadow-2xl reveal">Talk to Us</a>
+                <div class="bg-gradient-to-r from-primary/20 to-secondary/20 p-12 lg:p-16 rounded-3xl border border-border/50 shadow-2xl reveal">
+                    <h2 class="text-3xl lg:text-5xl font-bold mb-8 text-white">Have a bold idea?</h2>
+                    <p class="text-slate-400 text-lg mb-12 max-w-2xl mx-auto">Let's discuss how we can help you build and scale your venture in Africa.</p>
+                    <a href="contact.html" class="inline-block bg-secondary text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-opacity-90 shadow-2xl">Talk to Us</a>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer class="bg-dark text-white pt-20 pb-10">
-        <div class="container mx-auto px-6 border-t border-gray-800 pt-12 text-center text-gray-500 text-sm">
+        <div class="container mx-auto px-6 border-t border-border/30 pt-12 text-center text-slate-500 text-sm">
             <p>&copy; 2026 Ubulu Africa. All rights reserved.</p>
         </div>
     </footer>

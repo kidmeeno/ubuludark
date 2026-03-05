@@ -12,12 +12,12 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#0B3C5D',
-                        secondary: '#F47A20',
-                        growth: '#2FA84F',
-                        light: '#F5F7FA',
-                        dark: '#1A1A1A',
-                        border: '#E5E7EB',
+                        primary: "#3b82f6",
+                        secondary: "#fb923c",
+                        growth: "#4ade80",
+                        light: "#1e293b",
+                        dark: "#0f172a",
+                        border: "#334155",
                     }
                 }
             }
@@ -30,10 +30,10 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-light text-dark overflow-x-hidden">
+<body class="bg-dark text-slate-200 overflow-x-hidden">
 
     <!-- Header -->
-    <header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-white transition-all duration-300">
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-dark/80 backdrop-blur-md transition-all duration-300 border-b border-border/50">
         <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
             <a href="index.html" class="flex items-center space-x-2">
                 <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
@@ -49,11 +49,11 @@
                     <a href="what-we-do.html" class="nav-link font-medium hover:text-secondary transition-colors flex items-center">
                         What We Do <i class="fas fa-chevron-down ml-1 text-xs"></i>
                     </a>
-                    <div class="absolute left-0 mt-2 w-56 bg-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-gray-100 overflow-hidden">
-                        <a href="venture-building.html" class="block px-4 py-3 hover:bg-light text-sm font-medium">Venture Building</a>
-                        <a href="ecosystem-support.html" class="block px-4 py-3 hover:bg-light text-sm font-medium">Ecosystem Support</a>
-                        <a href="corporate-innovation.html" class="block px-4 py-3 hover:bg-light text-sm font-medium">Corporate Innovation</a>
-                        <a href="university-industry.html" class="block px-4 py-3 hover:bg-light text-sm font-medium">University Collaboration</a>
+                    <div class="absolute left-0 mt-2 w-56 bg-light rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-border overflow-hidden">
+                        <a href="venture-building.html" class="block px-4 py-3 hover:bg-dark text-sm font-medium transition-colors">Venture Building</a>
+                        <a href="ecosystem-support.html" class="block px-4 py-3 hover:bg-dark text-sm font-medium transition-colors">Ecosystem Support</a>
+                        <a href="corporate-innovation.html" class="block px-4 py-3 hover:bg-dark text-sm font-medium transition-colors">Corporate Innovation</a>
+                        <a href="university-industry.html" class="block px-4 py-3 hover:bg-dark text-sm font-medium transition-colors">University Collaboration</a>
                     </div>
                 </div>
                 <a href="programs-products.html" class="nav-link font-medium text-secondary active">Programs</a>
@@ -65,95 +65,95 @@
 
     <main class="pt-24">
         <!-- Hero Section -->
-        <section class="py-20 bg-white border-b border-gray-100">
+        <section class="py-20 bg-dark border-b border-border/50">
             <div class="container mx-auto px-6 text-center reveal">
-                <h1 class="text-4xl lg:text-5xl font-bold text-primary mb-6">Our Programs & Products</h1>
-                <p class="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed">
+                <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6">Our Programs & Products</h1>
+                <p class="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
                     Discover the specialized programs we've designed to support African innovators and the digital platforms we've built to scale innovation.
                 </p>
             </div>
         </section>
 
         <!-- Program Categories -->
-        <section class="py-24 bg-light">
+        <section class="py-24 bg-dark/50">
             <div class="container mx-auto px-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <!-- Incubation & Acceleration -->
-                    <div class="bg-white p-10 rounded-3xl shadow-sm reveal">
+                    <div class="bg-light p-10 rounded-3xl shadow-sm reveal border border-border/50 transition-all duration-300">
                         <div class="flex items-center space-x-4 mb-8">
-                            <div class="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center text-secondary text-2xl">
+                            <div class="w-14 h-14 bg-secondary/20 rounded-2xl flex items-center justify-center text-secondary text-2xl">
                                 <i class="fas fa-seedling"></i>
                             </div>
-                            <h2 class="text-2xl font-bold text-primary">Incubation & Acceleration</h2>
+                            <h2 class="text-2xl font-bold text-white">Incubation & Acceleration</h2>
                         </div>
-                        <p class="text-gray-500 mb-8">Structured programs designed to take startups from idea to product-market fit and scale.</p>
+                        <p class="text-slate-400 mb-8">Structured programs designed to take startups from idea to product-market fit and scale.</p>
                         <div class="space-y-4">
-                            <div class="p-6 bg-light rounded-2xl border border-gray-100 hover:border-secondary transition-all cursor-pointer group">
+                            <div class="p-6 bg-dark/50 rounded-2xl border border-border/50 hover:border-secondary transition-all cursor-pointer group">
                                 <h4 class="font-bold mb-2 group-hover:text-secondary transition-colors uppercase tracking-wider text-xs">Active Program</h4>
-                                <h3 class="text-xl font-bold mb-2 text-primary">The Ubulu Launchpad</h3>
-                                <p class="text-sm text-gray-500">A 12-week intensive incubation program for early-stage tech founders.</p>
+                                <h3 class="text-xl font-bold mb-2 text-white">The Ubulu Launchpad</h3>
+                                <p class="text-sm text-slate-400">A 12-week intensive incubation program for early-stage tech founders.</p>
                             </div>
-                            <div class="p-6 bg-light rounded-2xl border border-gray-100 opacity-60">
+                            <div class="p-6 bg-dark/50 rounded-2xl border border-border/50 opacity-60">
                                 <h4 class="font-bold mb-2 uppercase tracking-wider text-xs">Upcoming</h4>
-                                <h3 class="text-xl font-bold mb-2 text-primary">ClimateTech Accelerator</h3>
-                                <p class="text-sm text-gray-500">Accelerating solutions for sustainable energy and agriculture across Africa.</p>
+                                <h3 class="text-xl font-bold mb-2 text-white">ClimateTech Accelerator</h3>
+                                <p class="text-sm text-slate-400">Accelerating solutions for sustainable energy and agriculture across Africa.</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Capacity Building -->
-                    <div class="bg-white p-10 rounded-3xl shadow-sm reveal" style="transition-delay: 0.1s">
+                    <div class="bg-light p-10 rounded-3xl shadow-sm reveal border border-border/50 transition-all duration-300" style="transition-delay: 0.1s">
                         <div class="flex items-center space-x-4 mb-8">
-                            <div class="w-14 h-14 bg-growth/10 rounded-2xl flex items-center justify-center text-growth text-2xl">
+                            <div class="w-14 h-14 bg-growth/20 rounded-2xl flex items-center justify-center text-growth text-2xl">
                                 <i class="fas fa-graduation-cap"></i>
                             </div>
-                            <h2 class="text-2xl font-bold text-primary">Capacity Building</h2>
+                            <h2 class="text-2xl font-bold text-white">Capacity Building</h2>
                         </div>
-                        <p class="text-gray-500 mb-8">Empowering individuals and organizations with the skills needed for the future of work.</p>
+                        <p class="text-slate-400 mb-8">Empowering individuals and organizations with the skills needed for the future of work.</p>
                         <div class="space-y-4">
-                            <div class="p-6 bg-light rounded-2xl border border-gray-100 hover:border-growth transition-all cursor-pointer group">
+                            <div class="p-6 bg-dark/50 rounded-2xl border border-border/50 hover:border-growth transition-all cursor-pointer group">
                                 <h4 class="font-bold mb-2 group-hover:text-growth transition-colors uppercase tracking-wider text-xs">Digital Skills</h4>
-                                <h3 class="text-xl font-bold mb-2 text-primary">Digital Transformation Masterclass</h3>
-                                <p class="text-sm text-gray-500">Intensive training for corporate executives on navigating digital change.</p>
+                                <h3 class="text-xl font-bold mb-2 text-white">Digital Transformation Masterclass</h3>
+                                <p class="text-sm text-slate-400">Intensive training for corporate executives on navigating digital change.</p>
                             </div>
-                            <div class="p-6 bg-light rounded-2xl border border-gray-100 hover:border-growth transition-all cursor-pointer group">
+                            <div class="p-6 bg-dark/50 rounded-2xl border border-border/50 hover:border-growth transition-all cursor-pointer group">
                                 <h4 class="font-bold mb-2 group-hover:text-growth transition-colors uppercase tracking-wider text-xs">Technical</h4>
-                                <h3 class="text-xl font-bold mb-2 text-primary">Product Management Bootcamp</h3>
-                                <p class="text-sm text-gray-500">Equipping builders with the framework to design world-class products.</p>
+                                <h3 class="text-xl font-bold mb-2 text-white">Product Management Bootcamp</h3>
+                                <p class="text-sm text-slate-400">Equipping builders with the framework to design world-class products.</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Innovation Challenges -->
-                    <div class="bg-white p-10 rounded-3xl shadow-sm reveal">
+                    <div class="bg-light p-10 rounded-3xl shadow-sm reveal border border-border/50 transition-all duration-300">
                         <div class="flex items-center space-x-4 mb-8">
-                            <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary text-2xl">
+                            <div class="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center text-primary text-2xl">
                                 <i class="fas fa-trophy"></i>
                             </div>
-                            <h2 class="text-2xl font-bold text-primary">Innovation Challenges</h2>
+                            <h2 class="text-2xl font-bold text-white">Innovation Challenges</h2>
                         </div>
-                        <p class="text-gray-500 mb-8">Themed competitions to solve pressing sectoral problems with technology.</p>
+                        <p class="text-slate-400 mb-8">Themed competitions to solve pressing sectoral problems with technology.</p>
                         <div class="space-y-4">
-                            <div class="p-6 bg-light rounded-2xl border border-gray-100">
-                                <h3 class="text-xl font-bold mb-2 text-primary">CivicTech Challenge</h3>
-                                <p class="text-sm text-gray-500">Unearthing solutions that improve transparency and citizen engagement.</p>
+                            <div class="p-6 bg-dark/50 rounded-2xl border border-border/50">
+                                <h3 class="text-xl font-bold mb-2 text-white">CivicTech Challenge</h3>
+                                <p class="text-sm text-slate-400">Unearthing solutions that improve transparency and citizen engagement.</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Research Programs -->
-                    <div class="bg-white p-10 rounded-3xl shadow-sm reveal" style="transition-delay: 0.1s">
+                    <div class="bg-light p-10 rounded-3xl shadow-sm reveal border border-border/50 transition-all duration-300" style="transition-delay: 0.1s">
                         <div class="flex items-center space-x-4 mb-8">
-                            <div class="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center text-secondary text-2xl">
+                            <div class="w-14 h-14 bg-secondary/20 rounded-2xl flex items-center justify-center text-secondary text-2xl">
                                 <i class="fas fa-microscope"></i>
                             </div>
-                            <h2 class="text-2xl font-bold text-primary">Research Programs</h2>
+                            <h2 class="text-2xl font-bold text-white">Research Programs</h2>
                         </div>
-                        <p class="text-gray-500 mb-8">Data-driven insights into the African tech and innovation ecosystem.</p>
+                        <p class="text-slate-400 mb-8">Data-driven insights into the African tech and innovation ecosystem.</p>
                         <div class="space-y-4">
-                            <div class="p-6 bg-light rounded-2xl border border-gray-100">
-                                <h3 class="text-xl font-bold mb-2 text-primary">The State of African Hubs</h3>
-                                <p class="text-sm text-gray-500">Annual report on the sustainability and impact of innovation hubs across the continent.</p>
+                            <div class="p-6 bg-dark/50 rounded-2xl border border-border/50">
+                                <h3 class="text-xl font-bold mb-2 text-white">The State of African Hubs</h3>
+                                <p class="text-sm text-slate-400">Annual report on the sustainability and impact of innovation hubs across the continent.</p>
                             </div>
                         </div>
                     </div>
@@ -162,50 +162,50 @@
         </section>
 
         <!-- Product Showcase (Placeholder) -->
-        <section class="py-24 bg-white">
+        <section class="py-24 bg-dark">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16 reveal">
-                    <h2 class="text-4xl font-bold mb-4">Our Platforms</h2>
-                    <p class="text-gray-600 max-w-2xl mx-auto">Digital solutions built by Ubulu Africa to support the innovation journey.</p>
+                    <h2 class="text-4xl font-bold mb-4 text-white">Our Platforms</h2>
+                    <p class="text-slate-400 max-w-2xl mx-auto">Digital solutions built by Ubulu Africa to support the innovation journey.</p>
                 </div>
 
-                <div class="max-w-4xl mx-auto bg-primary text-white p-12 lg:p-20 rounded-[3rem] shadow-2xl relative overflow-hidden reveal">
+                <div class="max-w-4xl mx-auto bg-light text-white p-12 lg:p-20 rounded-[3rem] shadow-2xl relative overflow-hidden reveal border border-border/50 transition-all duration-300">
                     <div class="flex flex-col lg:flex-row items-center gap-12 relative z-10">
                         <div class="lg:w-1/2">
-                            <span class="inline-block px-4 py-1.5 bg-white/20 rounded-full text-xs font-bold mb-6">PLATFORM</span>
-                            <h2 class="text-3xl font-bold mb-6">Innovation OS</h2>
-                            <p class="text-white/70 mb-8 leading-relaxed">
+                            <span class="inline-block px-4 py-1.5 bg-secondary text-white rounded-full text-xs font-bold mb-6">PLATFORM</span>
+                            <h2 class="text-3xl font-bold mb-6 text-white">Innovation OS</h2>
+                            <p class="text-slate-400 mb-8 leading-relaxed">
                                 A comprehensive ecosystem management platform for innovation hubs to track startup progress, manage applications, and measure impact data in real-time.
                             </p>
                             <a href="#" class="inline-block bg-secondary text-white px-8 py-3 rounded-xl font-bold hover:bg-opacity-90 transition-all">Request Demo</a>
                         </div>
                         <div class="lg:w-1/2">
                             <!-- Visual placeholder for the platform -->
-                            <div class="bg-white/10 aspect-video rounded-2xl backdrop-blur-sm border border-white/20 flex items-center justify-center">
-                                <i class="fas fa-desktop text-6xl opacity-50"></i>
+                            <div class="bg-dark/50 aspect-video rounded-2xl backdrop-blur-sm border border-border/50 flex items-center justify-center">
+                                <i class="fas fa-desktop text-6xl opacity-30 text-white"></i>
                             </div>
                         </div>
                     </div>
                     <!-- Decorative back elements -->
-                    <div class="absolute top-0 right-0 w-64 h-64 bg-secondary opacity-20 -mr-32 -mt-32 rounded-full"></div>
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-secondary opacity-10 -mr-32 -mt-32 rounded-full"></div>
                 </div>
             </div>
         </section>
 
         <!-- CTA -->
-        <section class="py-24">
+        <section class="py-24 bg-dark">
             <div class="container mx-auto px-6 text-center">
-                <div class="bg-light p-16 rounded-3xl border border-gray-100 reveal">
-                    <h2 class="text-3xl font-bold text-primary mb-6">Need a custom program?</h2>
-                    <p class="text-gray-500 text-lg mb-10 max-w-xl mx-auto">We design and implement bespoke innovation programs for development partners and governments.</p>
-                    <a href="contact.html" class="inline-block bg-primary text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-opacity-90 shadow-xl transition-all">Talk to Us</a>
+                <div class="bg-light p-16 rounded-3xl border border-border/50 reveal shadow-2xl transition-all duration-300">
+                    <h2 class="text-3xl font-bold text-white mb-6">Need a custom program?</h2>
+                    <p class="text-slate-400 text-lg mb-10 max-w-xl mx-auto">We design and implement bespoke innovation programs for development partners and governments.</p>
+                    <a href="contact.html" class="inline-block bg-secondary text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-opacity-90 shadow-xl transition-all">Talk to Us</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="bg-dark text-white pt-20 pb-10">
-        <div class="container mx-auto px-6 border-t border-gray-800 pt-12 text-center text-gray-500 text-sm">
+        <div class="container mx-auto px-6 border-t border-border/30 pt-12 text-center text-slate-500 text-sm">
             <p>&copy; 2026 Ubulu Africa. All rights reserved.</p>
         </div>
     </footer>

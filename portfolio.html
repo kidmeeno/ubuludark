@@ -12,12 +12,12 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#0B3C5D',
-                        secondary: '#F47A20',
-                        growth: '#2FA84F',
-                        light: '#F5F7FA',
-                        dark: '#1A1A1A',
-                        border: '#E5E7EB',
+                        primary: "#3b82f6",
+                        secondary: "#fb923c",
+                        growth: "#4ade80",
+                        light: "#1e293b",
+                        dark: "#0f172a",
+                        border: "#334155",
                     }
                 }
             }
@@ -30,10 +30,10 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-light text-dark overflow-x-hidden">
+<body class="bg-dark text-slate-200 overflow-x-hidden">
 
     <!-- Header -->
-    <header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-white transition-all duration-300">
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-dark/80 backdrop-blur-md transition-all duration-300 border-b border-border/50">
         <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
             <a href="index.html" class="flex items-center space-x-2">
                 <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
@@ -55,35 +55,35 @@
 
     <main class="pt-24">
         <!-- Section Header -->
-        <section class="py-24 bg-white">
+        <section class="py-24 bg-dark">
             <div class="container mx-auto px-6 text-center reveal">
-                <h1 class="text-4xl lg:text-6xl font-bold text-primary mb-6">Our Impact Portfolio</h1>
-                <p class="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed">
+                <h1 class="text-4xl lg:text-6xl font-bold text-white mb-6">Our Impact Portfolio</h1>
+                <p class="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
                     Celebrating the successes of the ventures we've co-built and the transformative programs we've delivered across the continent.
                 </p>
             </div>
         </section>
 
-        <!-- Filters (Placeholder UI) -->
-        <section class="pb-12 bg-white sticky top-[80px] z-40 border-b border-gray-50">
+        <!-- Filters -->
+        <section class="pb-12 bg-dark sticky top-[80px] z-40 border-b border-border/30">
             <div class="container mx-auto px-6">
                 <div class="flex flex-wrap justify-center gap-4">
                     <button class="px-6 py-2 bg-primary text-white rounded-full font-bold shadow-md">All Projects</button>
-                    <button class="px-6 py-2 bg-light text-gray-500 rounded-full font-bold hover:bg-gray-200 transition-all border border-gray-100">Startup Support</button>
-                    <button class="px-6 py-2 bg-light text-gray-500 rounded-full font-bold hover:bg-gray-200 transition-all border border-gray-100">Capacity Building</button>
-                    <button class="px-6 py-2 bg-light text-gray-500 rounded-full font-bold hover:bg-gray-200 transition-all border border-gray-100">Policy Advisory</button>
-                    <button class="px-6 py-2 bg-light text-gray-500 rounded-full font-bold hover:bg-gray-200 transition-all border border-gray-100">Ecosystem Programs</button>
+                    <button class="px-6 py-2 bg-light text-slate-400 rounded-full font-bold hover:bg-dark-hover hover:text-white transition-all border border-border/50">Startup Support</button>
+                    <button class="px-6 py-2 bg-light text-slate-400 rounded-full font-bold hover:bg-dark-hover hover:text-white transition-all border border-border/50">Capacity Building</button>
+                    <button class="px-6 py-2 bg-light text-slate-400 rounded-full font-bold hover:bg-dark-hover hover:text-white transition-all border border-border/50">Policy Advisory</button>
+                    <button class="px-6 py-2 bg-light text-slate-400 rounded-full font-bold hover:bg-dark-hover hover:text-white transition-all border border-border/50">Ecosystem Programs</button>
                 </div>
             </div>
         </section>
 
         <!-- Portfolio Grid -->
-        <section class="py-24 bg-light">
+        <section class="py-24 bg-dark/50">
             <div class="container mx-auto px-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     
                     <!-- Case Study 1 -->
-                    <div class="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group reveal">
+                    <div class="bg-light rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group reveal border border-border/50">
                         <div class="relative aspect-video overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80" alt="Tech Hub Program" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute top-4 left-4">
@@ -92,20 +92,20 @@
                         </div>
                         <div class="p-8">
                             <h4 class="text-secondary font-bold text-sm mb-2">Development Partner X</h4>
-                            <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors">National Digital Health Challenge</h3>
-                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">Design and implementation of a nationwide challenge to identify and scale startups solving healthcare accessibility issues.</p>
-                            <div class="flex items-center justify-between pt-6 border-t border-gray-100">
+                            <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-secondary transition-colors">National Digital Health Challenge</h3>
+                            <p class="text-slate-400 text-sm mb-6 leading-relaxed">Design and implementation of a nationwide challenge to identify and scale startups solving healthcare accessibility issues.</p>
+                            <div class="flex items-center justify-between pt-6 border-t border-border/30">
                                 <div>
-                                    <span class="block text-primary font-bold">15+ Startups</span>
-                                    <span class="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Accelerated</span>
+                                    <span class="block text-white font-bold">15+ Startups</span>
+                                    <span class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Accelerated</span>
                                 </div>
-                                <a href="#" class="w-10 h-10 bg-light rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all"><i class="fas fa-arrow-right"></i></a>
+                                <a href="#" class="w-10 h-10 bg-dark rounded-full flex items-center justify-center text-white group-hover:bg-primary group-hover:text-white transition-all border border-border/50"><i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Case Study 2 -->
-                    <div class="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group reveal" style="transition-delay: 0.1s">
+                    <div class="bg-light rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group reveal border border-border/50" style="transition-delay: 0.1s">
                         <div class="relative aspect-video overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Capacity Building" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute top-4 left-4">
@@ -114,20 +114,20 @@
                         </div>
                         <div class="p-8">
                             <h4 class="text-secondary font-bold text-sm mb-2">Multi-Lateral NGO</h4>
-                            <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors">FutureSkills Hub Rwanda</h3>
-                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">Establishment and management of a technical training hub focusing on coding and product management excellence.</p>
-                            <div class="flex items-center justify-between pt-6 border-t border-gray-100">
+                            <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-secondary transition-colors">FutureSkills Hub Rwanda</h3>
+                            <p class="text-slate-400 text-sm mb-6 leading-relaxed">Establishment and management of a technical training hub focusing on coding and product management excellence.</p>
+                            <div class="flex items-center justify-between pt-6 border-t border-border/30">
                                 <div>
-                                    <span class="block text-primary font-bold">500+ Youth</span>
-                                    <span class="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Skills Impact</span>
+                                    <span class="block text-white font-bold">500+ Youth</span>
+                                    <span class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Skills Impact</span>
                                 </div>
-                                <a href="#" class="w-10 h-10 bg-light rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all"><i class="fas fa-arrow-right"></i></a>
+                                <a href="#" class="w-10 h-10 bg-dark rounded-full flex items-center justify-center text-white group-hover:bg-primary group-hover:text-white transition-all border border-border/50"><i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Case Study 3 -->
-                    <div class="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group reveal" style="transition-delay: 0.2s">
+                    <div class="bg-light rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group reveal border border-border/50" style="transition-delay: 0.2s">
                         <div class="relative aspect-video overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=800&q=80" alt="Venture Building" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute top-4 left-4">
@@ -136,14 +136,14 @@
                         </div>
                         <div class="p-8">
                             <h4 class="text-secondary font-bold text-sm mb-2">Ubulu Venture Studio</h4>
-                            <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors">Finclusiv App Launch</h3>
-                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">Co-building a digital lending platform for unbanked SMEs, from product architecture to seed round preparation.</p>
-                            <div class="flex items-center justify-between pt-6 border-t border-gray-100">
+                            <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-secondary transition-colors">Finclusiv App Launch</h3>
+                            <p class="text-slate-400 text-sm mb-6 leading-relaxed">Co-building a digital lending platform for unbanked SMEs, from product architecture to seed round preparation.</p>
+                            <div class="flex items-center justify-between pt-6 border-t border-border/30">
                                 <div>
-                                    <span class="block text-primary font-bold">$2.5M Raised</span>
-                                    <span class="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Capital Facilitated</span>
+                                    <span class="block text-white font-bold">$2.5M Raised</span>
+                                    <span class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Capital Facilitated</span>
                                 </div>
-                                <a href="#" class="w-10 h-10 bg-light rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all"><i class="fas fa-arrow-right"></i></a>
+                                <a href="#" class="w-10 h-10 bg-dark rounded-full flex items-center justify-center text-white group-hover:bg-primary group-hover:text-white transition-all border border-border/50"><i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -153,19 +153,19 @@
         </section>
 
         <!-- CTA -->
-        <section class="py-24 bg-white">
+        <section class="py-24 bg-dark">
             <div class="container mx-auto px-6">
-                <div class="bg-primary text-white p-16 rounded-3xl text-center reveal">
-                    <h2 class="text-3xl lg:text-4xl font-bold mb-8">Want to see more of our work?</h2>
-                    <p class="text-white/70 mb-10 max-w-2xl mx-auto">Contact our team for detailed case studies and program reports.</p>
-                    <a href="contact.html" class="inline-block bg-white text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-gray-50 shadow-xl transition-all">Request Case Studies</a>
+                <div class="bg-light text-white p-16 rounded-[3rem] text-center reveal border border-border/50 shadow-2xl transition-all duration-300">
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-8 text-white">Want to see more of our work?</h2>
+                    <p class="text-slate-400 mb-10 max-w-2xl mx-auto">Contact our team for detailed case studies and program reports.</p>
+                    <a href="contact.html" class="inline-block bg-secondary text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-opacity-90 shadow-xl transition-all">Request Case Studies</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="bg-dark text-white pt-20 pb-10">
-        <div class="container mx-auto px-6 border-t border-gray-800 pt-12 text-center text-gray-500 text-sm">
+        <div class="container mx-auto px-6 border-t border-border/30 pt-12 text-center text-slate-500 text-sm">
             <p>&copy; 2026 Ubulu Africa. All rights reserved.</p>
         </div>
     </footer>
