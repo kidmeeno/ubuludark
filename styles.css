@@ -6,8 +6,8 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #f5f7fa;
-  color: #1a1a1a;
+  background-color: #0f172a;
+  color: #f8fafc;
 }
 
 h1,
@@ -25,11 +25,14 @@ h6,
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f5f7fa;
+  background: #0f172a;
 }
 ::-webkit-scrollbar-thumb {
-  background: #0b3c5d;
+  background: #1e293b;
   border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
 }
 
 /* Animations & Transitions */
@@ -58,7 +61,8 @@ h6,
 }
 
 .stat-number {
-  background: linear-gradient(135deg, #0b3c5d, #2fa84f);
+  background: linear-gradient(135deg, #3b82f6, #4ade80);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

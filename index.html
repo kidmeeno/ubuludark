@@ -16,12 +16,12 @@
         theme: {
           extend: {
             colors: {
-              primary: "#0B3C5D",
-              secondary: "#F47A20",
-              growth: "#2FA84F",
-              light: "#F5F7FA",
-              dark: "#1A1A1A",
-              border: "#E5E7EB",
+              primary: "#3b82f6", // Brighter blue for dark theme
+              secondary: "#fb923c", // Brighter orange for dark theme
+              growth: "#4ade80", // Brighter green for dark theme
+              light: "#1e293b",
+              dark: "#0f172a",
+              border: "#334155",
             },
           },
         },
@@ -37,11 +37,11 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="bg-light text-dark overflow-x-hidden">
+  <body class="bg-dark text-slate-200 overflow-x-hidden">
     <!-- Header -->
     <header
       id="main-header"
-      class="fixed top-0 left-0 w-full z-50 bg-white transition-all duration-300"
+      class="fixed top-0 left-0 w-full z-50 bg-dark/80 backdrop-blur-md transition-all duration-300 border-b border-border/50"
     >
       <nav
         class="container mx-auto px-6 py-4 flex items-center justify-between"
@@ -78,26 +78,26 @@
               What We Do <i class="fas fa-chevron-down ml-1 text-xs"></i>
             </a>
             <div
-              class="absolute left-0 mt-2 w-56 bg-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-gray-100 overflow-hidden"
+              class="absolute left-0 mt-2 w-56 bg-light rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-border overflow-hidden"
             >
               <a
                 href="venture-building.html"
-                class="block px-4 py-3 hover:bg-light text-sm font-medium"
+                class="block px-4 py-3 hover:bg-dark text-sm font-medium transition-colors"
                 >Venture Building</a
               >
               <a
                 href="ecosystem-support.html"
-                class="block px-4 py-3 hover:bg-light text-sm font-medium"
+                class="block px-4 py-3 hover:bg-dark text-sm font-medium transition-colors"
                 >Ecosystem Support</a
               >
               <a
                 href="corporate-innovation.html"
-                class="block px-4 py-3 hover:bg-light text-sm font-medium"
+                class="block px-4 py-3 hover:bg-dark text-sm font-medium transition-colors"
                 >Corporate Innovation</a
               >
               <a
                 href="university-industry.html"
-                class="block px-4 py-3 hover:bg-light text-sm font-medium"
+                class="block px-4 py-3 hover:bg-dark text-sm font-medium transition-colors"
                 >University Collaboration</a
               >
             </div>
@@ -184,11 +184,11 @@
               class="inline-block px-4 py-1.5 bg-secondary bg-opacity-10 text-secondary rounded-full text-sm font-bold mb-6"
               >EMPOWERING INNOVATION</span
             >
-            <h1 class="text-5xl lg:text-7xl font-bold leading-tight mb-6">
+            <h1 class="text-5xl lg:text-7xl font-bold leading-tight mb-6 text-white">
               Make Innovation Work. <br />
               <span class="text-primary italic font-light">For Africa.</span>
             </h1>
-            <p class="text-lg text-gray-600 mb-10 max-w-xl leading-relaxed">
+            <p class="text-lg text-slate-400 mb-10 max-w-xl leading-relaxed">
               Ubulu Africa is a digital innovation hub and venture studio that
               builds ventures, delivers ecosystem programs, and partners with
               organizations to turn ideas into real impact.
@@ -235,11 +235,11 @@
       </section>
 
       <!-- What We Do -->
-      <section class="py-24 bg-white relative overflow-hidden">
+      <section class="py-24 bg-dark relative overflow-hidden">
         <div class="container mx-auto px-6">
           <div class="text-center mb-16 reveal">
-            <h2 class="text-4xl font-bold mb-4">What We Do</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4 text-white">What We Do</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto">
               We provide the technical expertise, strategic guidance, and
               ecosystem connections to drive innovation at every level.
             </p>
@@ -248,15 +248,15 @@
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Venture Building -->
             <div
-              class="bg-light p-8 rounded-2xl hover-lift reveal border border-transparent hover:border-secondary transition-all"
+              class="bg-light p-8 rounded-2xl hover-lift reveal border border-border hover:border-secondary transition-all"
             >
               <div
-                class="w-14 h-14 bg-white rounded-xl shadow-md flex items-center justify-center mb-6 text-secondary transform rotate-3"
+                class="w-14 h-14 bg-dark rounded-xl shadow-lg flex items-center justify-center mb-6 text-secondary transform rotate-3"
               >
                 <i class="fas fa-rocket text-2xl"></i>
               </div>
-              <h3 class="text-2xl font-bold mb-4">Venture Building</h3>
-              <p class="text-gray-600 mb-6">
+              <h3 class="text-2xl font-bold mb-4 text-white">Venture Building</h3>
+              <p class="text-slate-400 mb-6">
                 We don't just invest; we co-build. Helping founders navigate the
                 journey from concept to scalable enterprise.
               </p>
@@ -270,16 +270,16 @@
 
             <!-- Ecosystem Support -->
             <div
-              class="bg-light p-8 rounded-2xl hover-lift reveal border border-transparent hover:border-growth transition-all"
+              class="bg-light p-8 rounded-2xl hover-lift reveal border border-border hover:border-growth transition-all"
               style="transition-delay: 0.1s"
             >
               <div
-                class="w-14 h-14 bg-white rounded-xl shadow-md flex items-center justify-center mb-6 text-growth transform -rotate-3"
+                class="w-14 h-14 bg-dark rounded-xl shadow-lg flex items-center justify-center mb-6 text-growth transform -rotate-3"
               >
                 <i class="fas fa-network-wired text-2xl"></i>
               </div>
-              <h3 class="text-2xl font-bold mb-4">Ecosystem Support</h3>
-              <p class="text-gray-600 mb-6">
+              <h3 class="text-2xl font-bold mb-4 text-white">Ecosystem Support</h3>
+              <p class="text-slate-400 mb-6">
                 Designing and delivering programs that foster growth, from
                 incubators and accelerators to innovation challenges.
               </p>
@@ -293,16 +293,16 @@
 
             <!-- Strategic Partnerships -->
             <div
-              class="bg-light p-8 rounded-2xl hover-lift reveal border border-transparent hover:border-primary transition-all"
+              class="bg-light p-8 rounded-2xl hover-lift reveal border border-border hover:border-primary transition-all"
               style="transition-delay: 0.2s"
             >
               <div
-                class="w-14 h-14 bg-white rounded-xl shadow-md flex items-center justify-center mb-6 text-primary transform rotate-6"
+                class="w-14 h-14 bg-dark rounded-xl shadow-lg flex items-center justify-center mb-6 text-primary transform rotate-6"
               >
                 <i class="fas fa-handshake text-2xl"></i>
               </div>
-              <h3 class="text-2xl font-bold mb-4">Strategic Partnerships</h3>
-              <p class="text-gray-600 mb-6">
+              <h3 class="text-2xl font-bold mb-4 text-white">Strategic Partnerships</h3>
+              <p class="text-slate-400 mb-6">
                 Bridging the gap between startups, corporates, governments, and
                 academia to create shared value.
               </p>
@@ -318,12 +318,12 @@
       </section>
 
       <!-- Who We Support -->
-      <section class="py-24 bg-light">
+      <section class="py-24 bg-dark">
         <div class="container mx-auto px-6">
           <div class="flex flex-col lg:flex-row items-center">
             <div class="lg:w-1/3 mb-12 lg:mb-0 reveal">
-              <h2 class="text-4xl font-bold mb-6">Who We Support</h2>
-              <p class="text-gray-600 mb-8 leading-relaxed">
+              <h2 class="text-4xl font-bold mb-6 text-white">Who We Support</h2>
+              <p class="text-slate-400 mb-8 leading-relaxed">
                 We work across the entire innovation spectrum, partnering with
                 diverse stakeholders to build a thriving digital economy in
                 Africa.
@@ -343,45 +343,45 @@
             >
               <!-- Support Items -->
               <div
-                class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center reveal"
+                class="bg-light p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center reveal border border-border"
               >
                 <i class="fas fa-lightbulb text-secondary text-3xl mb-4"></i>
-                <h4 class="font-bold">Startups & SMEs</h4>
+                <h4 class="font-bold text-white">Startups & SMEs</h4>
               </div>
               <div
-                class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center reveal"
+                class="bg-white/5 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center reveal border border-border"
                 style="transition-delay: 0.05s"
               >
                 <i class="fas fa-building text-primary text-3xl mb-4"></i>
-                <h4 class="font-bold">Corporations</h4>
+                <h4 class="font-bold text-white">Corporations</h4>
               </div>
               <div
-                class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center reveal"
+                class="bg-white/5 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center reveal border border-border"
                 style="transition-delay: 0.1s"
               >
                 <i class="fas fa-university text-growth text-3xl mb-4"></i>
-                <h4 class="font-bold">Universities</h4>
+                <h4 class="font-bold text-white">Universities</h4>
               </div>
               <div
-                class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center reveal"
+                class="bg-white/5 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center reveal border border-border"
                 style="transition-delay: 0.15s"
               >
                 <i class="fas fa-landmark text-secondary text-3xl mb-4"></i>
-                <h4 class="font-bold">Government</h4>
+                <h4 class="font-bold text-white">Government</h4>
               </div>
               <div
-                class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center reveal"
+                class="bg-white/5 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center reveal border border-border"
                 style="transition-delay: 0.2s"
               >
                 <i class="fas fa-globe-africa text-primary text-3xl mb-4"></i>
-                <h4 class="font-bold">Development Orgs</h4>
+                <h4 class="font-bold text-white">Development Orgs</h4>
               </div>
               <div
-                class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center reveal"
+                class="bg-white/5 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center reveal border border-border"
                 style="transition-delay: 0.25s"
               >
                 <i class="fas fa-hubspot text-growth text-3xl mb-4"></i>
-                <h4 class="font-bold">Innovation Hubs</h4>
+                <h4 class="font-bold text-white">Innovation Hubs</h4>
               </div>
             </div>
           </div>
@@ -389,12 +389,12 @@
       </section>
 
       <!-- Impact Stats -->
-      <section class="py-24 bg-primary text-white relative overflow-hidden">
+      <section class="py-24 bg-dark text-white relative overflow-hidden border-y border-border/50">
         <div
-          class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10"
+          class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-5"
         >
           <div
-            class="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -mr-48 -mt-48 blur-3xl"
+            class="absolute top-0 right-0 w-96 h-96 bg-primary rounded-full -mr-48 -mt-48 blur-3xl"
           ></div>
           <div
             class="absolute bottom-0 left-0 w-64 h-64 bg-secondary rounded-full -ml-32 -mb-32 blur-3xl"
@@ -452,36 +452,36 @@
       </section>
 
       <!-- Partner Wall -->
-      <section class="py-16 bg-white border-b border-gray-100">
+      <section class="py-16 bg-dark border-b border-border/50">
         <div class="container mx-auto px-6">
           <p
-            class="text-center text-gray-400 font-semibold uppercase tracking-widest text-xs mb-10"
+            class="text-center text-slate-500 font-semibold uppercase tracking-widest text-xs mb-10"
           >
             Trusted by leading organizations
           </p>
           <div
-            class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-50 grayscale hover:grayscale-0 transition-all duration-700"
+            class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-40 grayscale invert hover:grayscale-0 hover:invert-0 transition-all duration-700"
           >
-            <span class="text-3xl font-black text-gray-800">PARTNER_1</span>
-            <span class="text-3xl font-black text-gray-800">PARTNER_2</span>
-            <span class="text-3xl font-black text-gray-800">PARTNER_3</span>
-            <span class="text-3xl font-black text-gray-800">PARTNER_4</span>
-            <span class="text-3xl font-black text-gray-800">PARTNER_5</span>
+            <span class="text-3xl font-black text-white/80">PARTNER_1</span>
+            <span class="text-3xl font-black text-white/80">PARTNER_2</span>
+            <span class="text-3xl font-black text-white/80">PARTNER_3</span>
+            <span class="text-3xl font-black text-white/80">PARTNER_4</span>
+            <span class="text-3xl font-black text-white/80">PARTNER_5</span>
           </div>
         </div>
       </section>
 
       <!-- CTA Section -->
-      <section class="py-24">
+      <section class="py-24 bg-dark">
         <div class="container mx-auto px-6">
           <div
-            class="bg-gradient-to-br from-primary to-primary/90 rounded-3xl p-12 lg:p-20 text-center relative overflow-hidden shadow-2xl reveal"
+            class="bg-gradient-to-br from-primary/20 to-primary/5 rounded-3xl p-12 lg:p-20 text-center relative overflow-hidden shadow-2xl reveal border border-border/50"
           >
             <div
-              class="absolute top-0 right-0 w-64 h-64 bg-secondary opacity-20 rounded-full -mr-32 -mt-32"
+              class="absolute top-0 right-0 w-64 h-64 bg-secondary opacity-10 rounded-full -mr-32 -mt-32 blur-3xl"
             ></div>
             <div
-              class="absolute bottom-0 left-0 w-32 h-32 bg-growth opacity-20 rounded-full -ml-16 -mb-16"
+              class="absolute bottom-0 left-0 w-32 h-32 bg-growth opacity-10 rounded-full -ml-16 -mb-16 blur-3xl"
             ></div>
 
             <h2
@@ -490,7 +490,7 @@
               Ready to build something impactful?
             </h2>
             <p
-              class="text-white opacity-80 text-lg mb-12 max-w-2xl mx-auto relative z-10"
+              class="text-slate-400 text-lg mb-12 max-w-2xl mx-auto relative z-10"
             >
               Whether you're a founder with a bold idea or an organization
               looking to drive digital transformation, let's collaborate to
@@ -506,7 +506,7 @@
               >
               <a
                 href="contact.html"
-                class="bg-white text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-gray-50 transition-all transform hover:scale-105 shadow-xl"
+                class="bg-white/10 text-white border border-white/20 px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-dark transition-all transform hover:scale-105 shadow-xl"
                 >Partner With Us</a
               >
             </div>
@@ -559,8 +559,8 @@
 
           <!-- Quick Links -->
           <div>
-            <h4 class="text-lg font-bold mb-8">Quick Links</h4>
-            <ul class="space-y-4 text-gray-400">
+            <h4 class="text-lg font-bold mb-8 text-white">Quick Links</h4>
+            <ul class="space-y-4 text-slate-400">
               <li>
                 <a
                   href="index.html"
@@ -601,8 +601,8 @@
 
           <!-- Services -->
           <div>
-            <h4 class="text-lg font-bold mb-8">Services</h4>
-            <ul class="space-y-4 text-gray-400">
+            <h4 class="text-lg font-bold mb-8 text-white">Services</h4>
+            <ul class="space-y-4 text-slate-400">
               <li>
                 <a
                   href="venture-building.html"
@@ -636,8 +636,8 @@
 
           <!-- Contact & Newsletter -->
           <div>
-            <h4 class="text-lg font-bold mb-8">Newsletter</h4>
-            <p class="text-gray-400 mb-6">
+            <h4 class="text-lg font-bold mb-8 text-white">Newsletter</h4>
+            <p class="text-slate-400 mb-6">
               Stay updated with the latest innovation news from Africa.
             </p>
             <form class="mb-8">
@@ -645,7 +645,7 @@
                 <input
                   type="email"
                   placeholder="Email Address"
-                  class="w-full bg-gray-800 border-none rounded-xl py-4 px-6 text-white focus:ring-2 focus:ring-primary"
+                  class="w-full bg-slate-800 border-none rounded-xl py-4 px-6 text-white focus:ring-2 focus:ring-primary"
                 />
                 <button
                   type="submit"
@@ -655,7 +655,7 @@
                 </button>
               </div>
             </form>
-            <div class="text-gray-400">
+            <div class="text-slate-400">
               <p class="flex items-center mb-2">
                 <i class="fas fa-envelope mr-3 text-secondary"></i>
                 hello@ubulu.africa
